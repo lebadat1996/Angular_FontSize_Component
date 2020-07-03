@@ -1,0 +1,9 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label >Enter fonr size (px):</label>
+  <input  type="range" min="10" max="50" [value]="fontSize" (change)="onChange($event.target.value)">
+</div>
+<p class="output"  [style.fontSize.px]= "fontSize">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam. Inventore quibusdam debitis, tempore error voluptatem explicabo ipsum?
+</p>
