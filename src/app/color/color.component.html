@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+
+<div style="margin-left: 500px">
+  <label>Color</label>
+  <input type="color" [value]="color" (change)="onChangeColor($event.target.value)">
+  <br>
+  <hr>
+  <input type="color" [(ngModel)]="color">
+  <br>
+  <hr>
+  <label>Color Change</label>
+  <div class="color-preview" [style.background]="color " style="width: 100px;height: 100px">
+
+  </div>
+</div>
